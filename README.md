@@ -18,7 +18,7 @@ Import statements are used to include external Python modules or libraries in a 
 
 Variables are named locations used to store data, and data types define the kind of data a variable can hold, such as integers, strings, lists, and dictionaries. Create a Python script named `variables_data_types.py` that defines a variable `age` with an integer value of `25` and a variable `name` with a string value of `"John"`. Print each of these with Python's built-in `print` function (e.g., `print(age, name)`).
 
-### Comments
+### 💬 Comments
 
 Comments are used to document code, providing context and explanations for future readers (including yourself). Comments in Python begin with the `#` character. Create a Python script named `comments.py` and add the following comment: `This is a comment`.
 

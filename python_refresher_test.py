@@ -21,10 +21,13 @@ def test_variables_data_types(capsys):
     assert "25" in captured.out and "John" in captured.out
 
 
-def test_comments(capsys):
-    exec(open("comments.py").read())
-    captured = capsys.readouterr()
-    assert "This is a comment" in captured.out
+def test_comments():
+    try:
+        with open("comments.py", encoding="utf-8") as f:
+            assert "This is a comment" in f.read()
+            assert "#" in f.read()
+    except FileNotFoundError:
+        assert False, "comments.py is missing"
 
 
 def test_functions_methods(capsys):
